@@ -8,15 +8,16 @@
 using namespace std;
 
 // открываем файл
+
 int main()
 {
 	setlocale(LC_ALL, "Rus");
 
-	ofstream out;
+	ofstream out;//библиотека ofstream класс out
 
-	out.open("D:/Климов/мои проги/!AcademyWorks/TestFileForOpenInCPP.txt");
+	out.open("D:/Климов/мои проги/!AcademyWorks/TestFileForOpenInCPP.txt");//open - метод открытия файла класса out
 
-	if (out.is_open())
+	if (out.is_open())//is_open - метод класса out для проверки
 	{
 		out << "я перезаписал файл2" << "\n";
 	}
